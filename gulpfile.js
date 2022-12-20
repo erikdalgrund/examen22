@@ -9,7 +9,7 @@ const concat = require('gulp-concat');
 compileSass.compiler = require('node-sass');
 
 const bundleSass = () => {
-    return src('./src/sass/**/*.scss')
+    return src('./src/sass/*.scss')
         .pipe(compileSass().on('error', compileSass.logError))
         .pipe(minifyCss())
         .pipe(sourceMaps.write())
@@ -18,7 +18,7 @@ const bundleSass = () => {
 };
 
 const devWatch = () => {
-    watch('./src/sass/**/*.scss', bundleSass); 
+    watch('./src/sass/*.scss', bundleSass); 
 }
 exports.devWatch = devWatch;
 exports.bundleSass = bundleSass;
