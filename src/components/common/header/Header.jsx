@@ -5,8 +5,8 @@ import '../../../sass/styles.scss';
 
 function Header() {
     return (
-        <div>
-            <h2>
+        <div class="header">
+            <h2 class="header__title">
                 LoL Corporate
             </h2>
             <Navbar>
