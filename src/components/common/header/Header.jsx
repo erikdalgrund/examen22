@@ -1,4 +1,6 @@
 import React from "react"; 
+import { Navbar, Navitem } from "../navbar";
+import { Dropdown, DropdownMenu, DropdownItem  } from "../dropdown";
 import '../../../sass/styles.scss';
 
 function Header() {
@@ -7,12 +9,17 @@ function Header() {
             <h2 class="header__title">
                 LoL Corporate
             </h2>
-            <ul class="header__navbar">
-                <li><a href="#" class="header__navbar--items">Home</a></li>
-                <li><a href="#" class="header__navbar--items">Cart</a></li>
-                <li><a href="#" class="header__navbar--items">Shop</a></li>
-                <li><a href="#" class="header__navbar--items">About</a></li>
-            </ul>
+            <Navbar>
+                <Navitem title="Home" />
+                <Navitem title="Browse" />
+                <Dropdown title="Help">
+                    <DropdownMenu>
+                        <DropdownItem title="Test 1"/>
+                        <DropdownItem title="Test 2"/>
+                        <DropdownItem title="Test 3"/>
+                    </DropdownMenu>
+                </Dropdown>
+            </Navbar>
         </div>
     )
 }
