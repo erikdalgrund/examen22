@@ -1,4 +1,7 @@
 import React from "react"; 
+import { Navbar, Navitem } from "../navbar";
+import { Dropdown, DropdownMenu, DropdownItem  } from "../dropdown";
+import '../../../sass/styles.scss';
 
 function Header() {
     return (
@@ -6,12 +9,17 @@ function Header() {
             <h2>
                 LoL Corporate
             </h2>
-            <ul>
-                <li>Home</li>
-                <li>Cart</li>
-                <li>Shop</li>
-                <li>About</li>
-            </ul>
+            <Navbar>
+                <Navitem title="Home" />
+                <Navitem title="Browse" />
+                <Dropdown title="Help">
+                    <DropdownMenu>
+                        <DropdownItem title="Test 1"/>
+                        <DropdownItem title="Test 2"/>
+                        <DropdownItem title="Test 3"/>
+                    </DropdownMenu>
+                </Dropdown>
+            </Navbar>
         </div>
     )
 }
