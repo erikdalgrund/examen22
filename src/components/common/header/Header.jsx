@@ -6,20 +6,26 @@ import '../../../sass/styles.scss';
 function Header() {
     return (
         <div className="header">
+            <div className="header__logo">
+                <img className="header__image" src="/images/header/header-logo.jpg" />
+            </div>
             <h2 className="header__title">
-                LoL Corporate
+                Color Code
             </h2>
             <Navbar>
                 <Navitem title="Home" />
                 <Navitem title="Browse" />
-                <Dropdown title="Help">
+                <Dropdown title="Color">
                     <DropdownMenu>
-                        <DropdownItem title="Test 1"/>
-                        <DropdownItem title="Test 2"/>
+                        <DropdownItem title="Color indoor"/>
+                        <DropdownItem title="Color outdoor"/>
                         <DropdownItem title="Test 3"/>
                     </DropdownMenu>
                 </Dropdown>
             </Navbar>
+            <div className="header__logo">
+                <img className="header__image--right" src="/images/header/header-logo.jpg" />
+            </div>
         </div>
     )
 }
