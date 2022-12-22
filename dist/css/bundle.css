@@ -1,1 +1,1 @@
-h1{color:red}.header{display:flex;justify-content:space-between;align-items:center}.header__navbar{display:flex;justify-content:center}
+h1{color:red}.header{display:flex;justify-content:space-between;align-items:center;padding-left:10rem;padding-right:10rem}.header__title{display:flex;justify-content:center;width:30%}.header__navbar{display:flex;justify-content:space-around;list-style:none;width:30%}.header__navbar--items :hover{cursor:pointer}
