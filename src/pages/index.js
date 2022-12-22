@@ -1,5 +1,9 @@
 import Home from "./homepage";
+import Indoor from "./indoor/Indoor";
+import Outdoor from "./outdoor";
 
 export{
-    Home
+    Home,
+    Indoor,
+    Outdoor
 }
