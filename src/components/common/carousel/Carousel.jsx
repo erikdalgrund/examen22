@@ -39,9 +39,13 @@ function Carousel( {images} ) {
                         }>
                         <img src={image.image} className='carousel-card--img' />
                         <div className="carousel-card--overlay">
-                            <h2 className='carousel-card--title'>
+                            <h2 className='carousel-card--title card-primary'>
                                 {image.title}
                             </h2>
+                            <div className='carousel-card--content'>
+                                {image.content}
+                                <a href="#" className='button-info'> {image.link} </a>
+                            </div>
                         </div>
                 </div>
             )
