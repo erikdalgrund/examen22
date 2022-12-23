@@ -4,7 +4,7 @@ import { content } from '../../components/common/carousel/content'
 
 function Home() {
   return (
-    <div>
+    <div className='homepage'>
         <Carousel images={ content } />
     </div>
   )
