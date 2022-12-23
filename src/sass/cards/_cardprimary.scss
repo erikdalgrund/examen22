@@ -1,0 +1,8 @@
+.card {
+    &-primary {
+        background: rgba($color: #ffff, $alpha: 0.6);
+        box-shadow: $cardPrimary;
+        border-radius: 10px;
+        padding: 5px;
+    }
+}

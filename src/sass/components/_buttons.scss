@@ -1,0 +1,13 @@
+
+.button-info {
+    border-radius: 10px;
+    padding: 3px;
+    box-shadow: $info;
+    width: fit-content;
+    transition: 0.5s;
+    margin-top: 10px;
+
+    &:hover {
+        background-color: $backdrop; opacity: 0.8;
+    }
+}

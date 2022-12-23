@@ -1,6 +1,7 @@
 .header {
     height: 200px;
-    background-color: rgb(247, 245, 245);
+    background-color: $backdrop;
+    border-bottom: 1px solid black;
     @include justify-content-between();
 
     &__logo {
