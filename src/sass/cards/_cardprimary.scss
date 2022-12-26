@@ -3,4 +3,12 @@
         box-shadow: $cardPrimary;
         border-radius: 10px;
         padding: 5px;
+
+        &-left {
+                width: 60%;
+        }
+
+        &-right {
+                width: 40%;
+        }
 }
