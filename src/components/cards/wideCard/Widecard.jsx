@@ -4,7 +4,7 @@ function Widecard() {
   return (
     <div className='widecard'>
         <div className='widecard-left'> 
-
+            test
         </div>
         <div className='widecard-right'>
 
