@@ -1,0 +1,9 @@
+.widecard {
+    background: rgba($color: #ffff, $alpha: 0.6);
+    box-shadow: $cardPrimary;
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    height: 500px;
+    margin-top: 50px;
+}
