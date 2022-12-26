@@ -1,0 +1,10 @@
+.card-info {
+    background: #ffff;
+    box-shadow: $cardPrimary;
+    width: 500px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
