@@ -9,10 +9,16 @@ function Home() {
     <div className='homepage'>
       <div className='homepage-top'>
           <Carousel images={ content } />
-          <CardInfo />
+          <CardInfo 
+            imageSrc="/images/cards/family-man.jpeg"
+            title="It's never to late!"
+            content='Become the "handyman" you always believed you could be!'
+            contentSecond="We have everything you need right here."
+            outro="Welcome!"
+          />
       </div>
       <section>
-          <Widecard />
+          <Widecard imageSrc="/images/hero/hero-painter.jpeg"/>
       </section>
     </div>
 
