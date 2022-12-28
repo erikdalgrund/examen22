@@ -1,27 +1,28 @@
 import React from 'react'
 
-function CardInfo() {
+function CardInfo({imageSrc, title, content, contentSecond, outro}) {
   return (
     <div className='card-info'>
-        <h3 className='card-info--title'>
-            Card
-        </h3>
-        <span className='card-info--items'>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Quas aut tenetur qui at voluptatum earum ipsa nisi dignissimos 
-                quibusdam incidunt consequuntur, 
-                officia esse voluptate fuga rem porro explicabo enim assumenda.
-            </p>
-        </span>
-        <span>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Quas aut tenetur qui at voluptatum earum ipsa nisi dignissimos 
-                quibusdam incidunt consequuntur, 
-                officia esse voluptate fuga rem porro explicabo enim assumenda.
-            </p>
-        </span>
+        <img src={imageSrc} className="card-info--image"/>
+        <div className='card-info--wrapper'>
+            <h3 className='card-info--title'>
+                {title}
+            </h3>
+            
+            <span className='card-info--items'>
+                <p>
+                    {content}
+                </p>
+                <p>
+                    {contentSecond}
+                </p>
+            </span>
+            <span className='card-info--outro'>
+                <h3>
+                    {outro}
+                </h3>
+            </span>
+        </div>
     </div>
   )
 }
