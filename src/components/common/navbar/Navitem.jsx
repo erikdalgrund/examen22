@@ -3,11 +3,9 @@ import React from "react";
 function Navitem(props) {
 
     return (
-        <li className="nav-item">
-            <a href="#">
+        <span className="nav-item">
                 { props.title }
-            </a>
-        </li>
+        </span>
     )
 }
 

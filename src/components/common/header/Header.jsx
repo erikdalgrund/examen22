@@ -1,6 +1,7 @@
 import React from "react"; 
 import { Navbar, Navitem } from "../navbar";
 import { Dropdown, DropdownMenu, DropdownItem  } from "../dropdown";
+import { Link } from "react-router-dom";
 import '../../../sass/styles.scss';
 
 function Header() {
@@ -13,8 +14,8 @@ function Header() {
                 Color Code
             </h2>
             <Navbar>
-                <Navitem title="Home" />
-                <Navitem title="Browse" />
+                <Link to="/"> <Navitem title="Home" /> </Link>
+                <Link to="/faq"> <Navitem title="F.a.q"/> </Link>
                 <Dropdown title="Color">
                     <DropdownMenu>
                         <DropdownItem title="Color indoor"/>
