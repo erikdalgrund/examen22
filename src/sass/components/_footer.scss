@@ -1,3 +1,38 @@
-h1 {
-    color: red;
+.footer {
+    background-color: #ffff;
+    height: 200px;
+
+    &-partners {
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        padding: 10px;
+    }
+
+    &-follow {
+        padding: 40px;  
+        
+        &--icons {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+    }
+
+    &-images {
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &-bottom {
+        background-color: black;
+        height: 40%;
+        width: 100%;
+        color: #ffff;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+    }
 }
