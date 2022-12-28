@@ -1,0 +1,19 @@
+.card-faq {
+    background: #ffff;
+    box-shadow: $cardPrimary;
+    width: 70%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 30px;
+
+    &--items {
+        margin-top: 30px;
+        width: 80%;
+
+        & p {
+            margin-top: 20px;
+        }
+    }
+}

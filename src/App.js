@@ -1,7 +1,7 @@
 import React, { useState} from "react";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Header, Footer } from './components/common';
-import { Home, Indoor, Outdoor } from "./pages";
+import { Home, Indoor, Outdoor, Faq } from "./pages";
 
 
 
@@ -15,6 +15,7 @@ function App() {
                     <Route path="/" element={<Home/>} />
                     <Route path="/indoor" element={<Indoor/>} />
                     <Route path="/outdoor" element={<Outdoor/>} />
+                    <Route path="/faq" element={<Faq/>} />
               </Routes>
             </div>
           <Footer />

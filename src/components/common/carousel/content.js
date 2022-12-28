@@ -13,7 +13,8 @@ export const content = [
             Yes you can.
             Click below to learn how!
         </p>,
-        link: "Learn more"
+        link: "Learn more",
+        href: "/faq"
     },
     {
         image: "/images/carousel/paint-roller.jpg",

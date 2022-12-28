@@ -44,7 +44,7 @@ function Carousel( {images} ) {
                             </h2>
                             <div className='carousel-card--content'>
                                 {image.content}
-                                <a href="#" className='button-info'> {image.link} </a>
+                                <a href={image.href} className='button-info'> {image.link} </a>
                             </div>
                         </div>
                 </div>
