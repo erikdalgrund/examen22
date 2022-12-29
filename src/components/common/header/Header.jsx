@@ -18,7 +18,7 @@ function Header() {
                 <Link to="/faq"> <Navitem title="F.a.q"/> </Link>
                 <Dropdown title="Color">
                     <DropdownMenu>
-                        <DropdownItem title="Color indoor"/>
+                        <Link to="/indoor"> <DropdownItem title="Color indoor"/> </Link>
                         <DropdownItem title="Color outdoor"/>
                         <DropdownItem title="Test 3"/>
                     </DropdownMenu>
