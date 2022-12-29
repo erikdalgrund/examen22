@@ -1,15 +1,15 @@
 import React from 'react'
 
-function CardInfo({imageSrc, title, content, contentSecond, outro}) {
+function CardInfo({imageSrc, title, content, contentSecond, outro, cssClass}) {
   return (
-    <div className='card-info'>
-        <img src={imageSrc} className="card-info--image"/>
-        <div className='card-info--wrapper'>
-            <h3 className='card-info--title'>
+    <div className={cssClass}>
+        <img src={imageSrc} className={cssClass + "--image"}/>
+        <div className={cssClass + "--wrapper"}>
+            <h3 className={cssClass + "--title"}>
                 {title}
             </h3>
             
-            <span className='card-info--items'>
+            <span className={cssClass + "--items"}>
                 <p>
                     {content}
                 </p>
@@ -17,7 +17,7 @@ function CardInfo({imageSrc, title, content, contentSecond, outro}) {
                     {contentSecond}
                 </p>
             </span>
-            <span className='card-info--outro'>
+            <span className={cssClass + "--outro"}>
                 <h3>
                     {outro}
                 </h3>

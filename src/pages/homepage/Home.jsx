@@ -15,6 +15,7 @@ function Home() {
             content='Become the "handyman" you always believed you could be!'
             contentSecond="We have everything you need right here."
             outro="Welcome!"
+            cssClass="card-info"
           />
       </div>
       <section>
