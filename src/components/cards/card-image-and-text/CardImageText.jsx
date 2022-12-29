@@ -1,6 +1,6 @@
 import React from 'react'
 
-function CardImageText( {cssClass, image} ) {
+function CardImageText( {cssClass, image, title, content} ) {
   return (
     <div className={cssClass}>
         <div className={cssClass + "-left"}>
@@ -9,8 +9,8 @@ function CardImageText( {cssClass, image} ) {
             </div>
         </div>
         <div className={cssClass + "-right"}>
-            <h2>Paint indoor</h2>
-            <p>Here you will find all the colors you can imagine to spice up your room</p>
+            <h2>{title}</h2>
+            <p>{content}</p>
         </div>
     </div>
   )

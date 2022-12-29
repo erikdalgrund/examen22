@@ -8,6 +8,8 @@ function Indoor() {
         <CardImageText 
           cssClass="cardIndoor"
           image="/images/paint/can-of-paint.jpeg"
+          title="Paint indoor"
+          content="Here you will find all the colors you can imagine to spice up your room"
           />
       </div>
     </div>

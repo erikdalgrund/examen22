@@ -19,7 +19,7 @@ function Header() {
                 <Dropdown title="Color">
                     <DropdownMenu>
                         <Link to="/indoor"> <DropdownItem title="Color indoor"/> </Link>
-                        <DropdownItem title="Color outdoor"/>
+                        <Link to="/outdoor"> <DropdownItem title="Color outdoor"/> </Link>
                         <DropdownItem title="Test 3"/>
                     </DropdownMenu>
                 </Dropdown>
