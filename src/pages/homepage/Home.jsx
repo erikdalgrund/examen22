@@ -11,7 +11,7 @@ function Home() {
           <Carousel images={ content } />
           <CardInfo 
             imageSrc="/images/cards/family-man.jpeg"
-            title="It's never to late!"
+            title="It's never too late!"
             content='Become the "handyman" you always believed you could be!'
             contentSecond="We have everything you need right here."
             outro="Welcome!"

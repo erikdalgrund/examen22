@@ -15,7 +15,7 @@ function Header() {
             </h2>
             <Navbar>
                 <Link to="/"> <Navitem title="Home" /> </Link>
-                <Link to="/faq"> <Navitem title="F.a.q"/> </Link>
+                <Link to="/faq"> <Navitem title="FAQ"/> </Link>
                 <Dropdown title="Color">
                     <DropdownMenu>
                         <Link to="/indoor"> <DropdownItem title="Color indoor"/> </Link>
