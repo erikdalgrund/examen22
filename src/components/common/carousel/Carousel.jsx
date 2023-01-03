@@ -18,7 +18,7 @@ function Carousel( {images} ) {
     };
 
     const slideLeft = () => {
-        setCurrent(current - 1)
+        setCurrent(current === 0 ? images.length -1 : current -1);
     }
 
   return (
@@ -31,27 +31,27 @@ function Carousel( {images} ) {
                 clearTimeout(timeOut)
                 }}>
         <div className='carousel-wrapper'>
-        {images.map((image, index) => {
-            return (
-                <div key={ index } className={ index == current
-                        ? "carosel-card carousel-card--active" 
-                        : "carousel-card"
-                        }>
-                        <img src={image.image} className='carousel-card--img' />
-                        <div className="carousel-card--overlay">
-                            <h2 className='carousel-card--title card-primary'>
-                                {image.title}
-                            </h2>
-                            <div className='carousel-card--content'>
-                                {image.content}
-                                <a href={image.href} className='button-info'> {image.link} </a>
+            {images.map((image, index) => {
+                return (
+                    <div key={ index } className={ index == current
+                            ? "carousel-card carousel-card--active" 
+                            : "carousel-card"
+                            }>
+                            <img src={image.image} className='carousel-card--img' />
+                            <div className="carousel-card--overlay">
+                                <h2 className='carousel-card--title card-primary'>
+                                    {image.title}
+                                </h2>
+                                <div className='carousel-card--content'>
+                                    {image.content}
+                                    <a href={image.href} className='button-info'> {image.link} </a>
+                                </div>
                             </div>
-                        </div>
-                </div>
-            )
-        })}
-        <div className='carousel-arrow carousel-arrow--left' onClick={slideLeft}>&lsaquo;</div>
-        <div className='carousel-arrow carousel-arrow--right' onClick={slideRight}>&rsaquo;</div>
+                    </div>
+                )
+            })}
+            <div className='carousel-arrow carousel-arrow--left' onClick={slideLeft}>&lsaquo;</div>
+            <div className='carousel-arrow carousel-arrow--right' onClick={slideRight}>&rsaquo;</div>
         </div>
     </div>
   )
