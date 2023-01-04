@@ -16,6 +16,8 @@ function Login() {
                 <h3> register </h3>
                 <label> Username </label>
                 <input type="text" />
+                <label htmlFor=""> Email </label>
+                <input type="text" />
                 <label htmlFor=""> Password </label>
                 <input type="text" />
                 <button> Register </button>
