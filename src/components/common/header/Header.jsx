@@ -23,6 +23,7 @@ function Header() {
                         <DropdownItem title="Test 3"/>
                     </DropdownMenu>
                 </Dropdown>
+                <Link to="/login"> <Navitem title="Login" /> </Link>
             </Navbar>
             <div className="header__logo">
                 <img className="header__image--right" src="/images/header/header-logo.jpg" />
