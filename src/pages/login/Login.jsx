@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Axios from 'axios';
 
 function Login() {
@@ -14,6 +14,9 @@ function Login() {
 
     // State for login message 
     const [loginStatus, setLoginStatus] = useState('');
+
+    // Axios default connection
+    Axios.defaults.withCredentials = true;
 
     // Function for register new user
     const register = () => {
@@ -38,7 +41,16 @@ function Login() {
                 setLoginStatus(response.data[0].username)
             }
         });
-    }
+    };
+
+    // Axios state to see if user is logged in 
+    useEffect(() => {
+        Axios.get('http://localhost:3001/login').then((response) => {
+            if (response.data.loggedIn == true) {
+                setLoginStatus(response.data.user[0].username)
+            }
+        });
+    }, [])
 
   return (
     <div className='loginPage'>
