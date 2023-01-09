@@ -7,26 +7,34 @@ import '../../../sass/styles.scss';
 function Header() {
     return (
         <div className="header">
-            <div className="header__logo">
-                <img className="header__image" src="/images/header/header-logo.jpg" />
-            </div>
-            <h2 className="header__title">
-                Color Code
-            </h2>
-            <Navbar>
-                <Link to="/"> <Navitem title="Home" /> </Link>
-                <Link to="/faq"> <Navitem title="FAQ"/> </Link>
-                <Dropdown title="Color">
-                    <DropdownMenu>
-                        <Link to="/indoor"> <DropdownItem title="Color indoor"/> </Link>
-                        <Link to="/outdoor"> <DropdownItem title="Color outdoor"/> </Link>
-                        <DropdownItem title="Test 3"/>
-                    </DropdownMenu>
-                </Dropdown>
+            <div className="header__top">
+                <div className="header__logo">
+                    <img className="header__image" src="/images/header/cartoon-brush-.jpg" />
+                </div>
                 <Link to="/login"> <Navitem title="Login" /> </Link>
-            </Navbar>
-            <div className="header__logo">
-                <img className="header__image--right" src="/images/header/header-logo.jpg" />
+            </div>
+            <div className="header__content">
+                <div className="header__left">
+                    <div className="header__title">
+                        <p className="header__title--color">
+                            Color 
+                        </p>
+                        <p className="header__title--code">
+                            Code
+                        </p>
+                    </div>
+                </div>
+                <Navbar>
+                    <Link to="/"> <Navitem title="Home" /> </Link>
+                    <Link to="/faq"> <Navitem title="FAQ"/> </Link>
+                    <Dropdown title="Color">
+                        <DropdownMenu>
+                            <Link to="/indoor"> <DropdownItem title="Color indoor"/> </Link>
+                            <Link to="/outdoor"> <DropdownItem title="Color outdoor"/> </Link>
+                            <DropdownItem title="Test 3"/>
+                        </DropdownMenu>
+                    </Dropdown>
+                </Navbar>
             </div>
         </div>
     )
