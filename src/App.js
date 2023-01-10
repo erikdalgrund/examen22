@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Header, Footer } from './components/common';
 import ShopContextProvider from "./components/shoppingCart/context/ShopContextProvider";
-import { Home, Indoor, Outdoor, Faq, Login, Tools } from "./pages";
+import { Home, Indoor, Outdoor, Faq, Login, Tools, ShoppingCart} from "./pages";
 
 
 
@@ -20,6 +20,7 @@ function App() {
                       <Route path="/faq" element={<Faq/>} />
                       <Route path="/login" element={<Login/>} />
                       <Route path="/tools" element={<Tools/>} />
+                      <Route path="/cart" element={<ShoppingCart/>} />
                 </Routes>
               </div>
             <Footer />
