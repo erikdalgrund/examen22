@@ -12,6 +12,7 @@ function Header() {
                     <img className="header__image" src="/images/header/cartoon-brush-.jpg" />
                 </div>
                 <Link to="/login"> <Navitem title="Login" /> </Link>
+                <Link to="/cart"> <Navitem title="Cart" /> </Link>
             </div>
             <div className="header__content">
                 <div className="header__left">
