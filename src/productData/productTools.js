@@ -57,6 +57,7 @@ export const paintBrushes = [
     },
 ]
 
+// Rollers
 export const rollers = [
     {
         id: 7,
@@ -78,6 +79,7 @@ export const rollers = [
     },
 ]
 
+// PuttyKnife
 export const puttyKnife = [
     {
         id: 10,
