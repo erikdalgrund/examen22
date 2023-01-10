@@ -27,10 +27,11 @@ function Header() {
                 <Navbar>
                     <Link to="/"> <Navitem title="Home" /> </Link>
                     <Link to="/faq"> <Navitem title="FAQ"/> </Link>
-                    <Dropdown title="Color">
+                    <Dropdown title="Shop">
                         <DropdownMenu>
                             <Link to="/indoor"> <DropdownItem title="Color indoor"/> </Link>
                             <Link to="/outdoor"> <DropdownItem title="Color outdoor"/> </Link>
+                            <Link to="/tools"> <DropdownItem title="Tools"/> </Link>
                             <DropdownItem title="Test 3"/>
                         </DropdownMenu>
                     </Dropdown>
