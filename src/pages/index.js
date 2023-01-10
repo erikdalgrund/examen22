@@ -4,6 +4,7 @@ import Outdoor from "./outdoor";
 import Faq from "./f.a.q";
 import Login from "./login";
 import Tools from "./tools";
+import ShoppingCart from "./shoppingcart";
 
 export{
     Home,
@@ -11,5 +12,6 @@ export{
     Outdoor,
     Faq,
     Login,
-    Tools
+    Tools,
+    ShoppingCart
 }

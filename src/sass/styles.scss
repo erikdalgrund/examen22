@@ -16,6 +16,8 @@
 @import "./components/carousel";
 @import "./components/navbar";
 @import "./components/dropdown";
+@import "./components/cartItem";
+@import "./components/cart";
 
 // Pages 
 @import "./pages/homepage";
@@ -24,6 +26,7 @@
 @import "./pages/faq";
 @import "./pages/outdoor";
 @import "./pages/toolsPage";
+@import "./pages/shoppingCart";
 
 // Cards
 @import "./cards/cardprimary";
