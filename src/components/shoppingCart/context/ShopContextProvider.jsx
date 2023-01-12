@@ -1,7 +1,12 @@
 import React, { createContext, useState } from 'react'
 import { paintBrushes, rollers, puttyKnife } from '../../../productData/productTools';
 
+
+// In here is functionality for the shopping cart 
+
 export const ShopContext = createContext(null);
+
+const combineProducts = paintBrushes.concat(rollers, puttyKnife);
 
 export const GetDefaultCart = () => {
 
@@ -13,20 +18,40 @@ export const GetDefaultCart = () => {
 
     return cart;
 }
-
 function ShopContextProvider(props) {
 
     const [CartItems, setCartItems] = useState(GetDefaultCart());
 
     const addToCart = (itemId) => {
         setCartItems(( prev => ({...prev, [itemId]: prev[itemId] + 1 })))
-    }
+    };
 
     const removeToCart = (itemId) => {
         setCartItems(( prev => ({...prev, [itemId]: prev[itemId] - 1 })))
-    }
+    };
 
-    const contextValue = { CartItems, addToCart, removeToCart };
+    const updateCartItemCount = (newAmount, itemId) => {
+        setCartItems((prev) => ({...prev, [itemId]: newAmount}))
+    };
+
+    const getTotalCartAmount = () => {
+        let totalAmount = 0; 
+        for (const item in CartItems) {
+            if (CartItems[item] > 0) {
+                let itemInfo = combineProducts.find((product) => product.id === Number(item));
+                totalAmount += CartItems[item] * itemInfo.price 
+             }
+        }   
+        return totalAmount
+    };
+
+    const contextValue = {   
+        CartItems, 
+        addToCart, 
+        removeToCart, 
+        updateCartItemCount,
+        getTotalCartAmount,
+    };
 
     // console.log(CartItems)
 
