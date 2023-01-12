@@ -4,7 +4,8 @@ import { ShopContext } from '../../shoppingCart/context/ShopContextProvider';
 function RollerProduct(props) {
 
     const { id, productName, price, image} = props.data
-    const { addToCart } = useContext(ShopContext);
+    const { addToCart, CartItems } = useContext(ShopContext);
+    const cartItemAmount = CartItems[id];
 
   return (
     <div className='tool'>
@@ -15,7 +16,7 @@ function RollerProduct(props) {
         <p className='tool__price'> ${price}</p>
         <button 
           className='tool__addToCart' 
-          onClick={() => addToCart(id)}>Add to cart
+          onClick={() => addToCart(id)}>Add to cart {cartItemAmount >  0 && <> ({cartItemAmount}) </>}
         </button>
     </div>  
   )
