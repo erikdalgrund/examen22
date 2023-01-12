@@ -23,37 +23,73 @@ export const paintBrushes = [
         id: 1,
         productName: "Brush one",
         price: 129.95,
-        image: brushOne
+        image: brushOne,
+        description: 
+            "lorem ipsum dola dola dola dola" +
+            "lorem ipsum dola dola dola dola" +
+            "lorem ipsum dola dola dola dola" +
+            "lorem ipsum dola dola dola dola" +
+            "lorem ipsum dola dola dola dola" 
     },
     {
         id: 2,
         productName: "Brush two",
         price: 229,
-        image: brushTwo
+        image: brushTwo,
+        description: 
+        "lorem ipsum dola dola dola dola" +
+        "lorem ipsum dola dola dola dola" +
+        "lorem ipsum dola dola dola dola" +
+        "lorem ipsum dola dola dola dola" +
+        "lorem ipsum dola dola dola dola" 
     },
     {
         id: 3,
         productName: "Brush three",
         price: 159,
-        image: brushThree
+        image: brushThree,
+        description: 
+        "lorem ipsum dola dola dola dola" +
+        "lorem ipsum dola dola dola dola" +
+        "lorem ipsum dola dola dola dola" +
+        "lorem ipsum dola dola dola dola" +
+        "lorem ipsum dola dola dola dola" 
     },
     {
         id: 4, 
         productName: "Brush four",
         price: 129.95,
-        image: brushFour
+        image: brushFour,
+        description: 
+        "lorem ipsum dola dola dola dola" +
+        "lorem ipsum dola dola dola dola" +
+        "lorem ipsum dola dola dola dola" +
+        "lorem ipsum dola dola dola dola" +
+        "lorem ipsum dola dola dola dola" 
     },
     {
         id: 5,
         productName: "Brush five",
         price: 159,
-        image: brushFive
+        image: brushFive,
+        description: 
+        "lorem ipsum dola dola dola dola" +
+        "lorem ipsum dola dola dola dola" +
+        "lorem ipsum dola dola dola dola" +
+        "lorem ipsum dola dola dola dola" +
+        "lorem ipsum dola dola dola dola" 
     },
     {
         id: 6,
         productName: "Brush set",
         price: 399,
-        image: brushSix
+        image: brushSix,
+        description: 
+        "lorem ipsum dola dola dola dola" +
+        "lorem ipsum dola dola dola dola" +
+        "lorem ipsum dola dola dola dola" +
+        "lorem ipsum dola dola dola dola" +
+        "lorem ipsum dola dola dola dola" 
     },
 ]
 
@@ -63,19 +99,37 @@ export const rollers = [
         id: 7,
         productName: "Roller set",
         price: 399,
-        image: rollerOne
+        image: rollerOne,
+        description: 
+        "lorem ipsum dola dola dola dola" +
+        "lorem ipsum dola dola dola dola" +
+        "lorem ipsum dola dola dola dola" +
+        "lorem ipsum dola dola dola dola" +
+        "lorem ipsum dola dola dola dola" 
     },
     {
         id: 8,
         productName: "Maxibygel",
         price: 129,
-        image: rollerTwo
+        image: rollerTwo,
+        description: 
+        "lorem ipsum dola dola dola dola" +
+        "lorem ipsum dola dola dola dola" +
+        "lorem ipsum dola dola dola dola" +
+        "lorem ipsum dola dola dola dola" +
+        "lorem ipsum dola dola dola dola" 
     },
     {
         id: 9,
         productName: "Roller new",
         price: 99,
-        image: rollerThree
+        image: rollerThree,
+        description: 
+        "lorem ipsum dola dola dola dola" +
+        "lorem ipsum dola dola dola dola" +
+        "lorem ipsum dola dola dola dola" +
+        "lorem ipsum dola dola dola dola" +
+        "lorem ipsum dola dola dola dola" 
     },
 ]
 
@@ -85,18 +139,36 @@ export const puttyKnife = [
         id: 10,
         productName: "Broad putty plastic",
         price: 229,
-        image: puttyOne
+        image: puttyOne,
+        description: 
+        "lorem ipsum dola dola dola dola" +
+        "lorem ipsum dola dola dola dola" +
+        "lorem ipsum dola dola dola dola" +
+        "lorem ipsum dola dola dola dola" +
+        "lorem ipsum dola dola dola dola" 
     },
     {
         id: 11,
         productName: "Broad putty wood",
         price: 129,
-        image: puttyTwo
+        image: puttyTwo,
+        description: 
+        "lorem ipsum dola dola dola dola" +
+        "lorem ipsum dola dola dola dola" +
+        "lorem ipsum dola dola dola dola" +
+        "lorem ipsum dola dola dola dola" +
+        "lorem ipsum dola dola dola dola" 
     },
     {
         id: 12,
         productName: "Japan putty",
         price: 199,
-        image: puttyThree
+        image: puttyThree,
+        description: 
+        "lorem ipsum dola dola dola dola" +
+        "lorem ipsum dola dola dola dola" +
+        "lorem ipsum dola dola dola dola" +
+        "lorem ipsum dola dola dola dola" +
+        "lorem ipsum dola dola dola dola" 
     },
 ]
