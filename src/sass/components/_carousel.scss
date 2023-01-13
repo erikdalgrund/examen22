@@ -1,9 +1,9 @@
 
 
 .carousel {
-    height: 600px;
+    height: 500px;
     width: 100%;
-    max-width: 700px;
+    max-width: 50%;
     box-shadow: $cardPrimary;
     border-radius: 10px;
     
@@ -82,15 +82,11 @@
 
         &--content {
             width: 40%;
-            background: rgba($color: #ffff, $alpha: 0.6);
             display: flex;
             flex-direction: column;
             align-items: center;
-            box-shadow: $cardPrimary;
-            border-radius: 10px;
             text-align: center;
             font-size: $m;
-            padding: 20px;
             margin-left: 70px;
             margin-bottom: 50px;
         }

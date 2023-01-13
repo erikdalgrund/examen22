@@ -8,7 +8,6 @@ function CardInfo({imageSrc, title, content, contentSecond, outro, cssClass}) {
             <h3 className={cssClass + "--title"}>
                 {title}
             </h3>
-            
             <span className={cssClass + "--items"}>
                 <p>
                     {content}
