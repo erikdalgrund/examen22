@@ -1,15 +1,12 @@
 .widecard {
     background: rgba($color: #ffff, $alpha: 0.6);
     box-shadow: $cardPrimary;
-    border-radius: 10px;
     display: flex;
-    height: 500px;
-    margin-top: 50px;
+    height: 555px;
     
         &-image--hero {
             width: 100%;
             height: 100%;
-            border-radius: 10px;
         }
         
 }

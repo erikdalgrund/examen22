@@ -8,9 +8,7 @@ function Header() {
     return (
         <div className="header">
             <div className="header__top">
-                <div className="header__logo">
-                    <img className="header__image" src="/images/header/cartoon-brush-.jpg" />
-                </div>
+
                 <Link to="/login"> <Navitem title="Login" /> </Link>
                 <Link to="/cart"> <Navitem title="Cart" /> </Link>
             </div>

@@ -3,7 +3,8 @@
     height: 200px;
 
     &__content {
-    @include justify-content-center();
+        height: 120px;
+        display: flex;
     }
 
     &__top {
@@ -11,7 +12,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: #104B57;
+
+    
         a {
+            color: white;
             span {
                 margin-right: 10px;
             }
@@ -21,7 +26,7 @@
     &__left {
         display: flex; 
         align-items: center;
-        height: 80px;
+        height: 100%;
     }
 
     &__logo {
@@ -62,4 +67,27 @@
 
     }
     
+}
+
+@media only screen and (max-width: 500px) {
+    .header {
+
+        height: auto;
+        
+        &__top {
+            display: flex;
+            flex-direction: column;
+            height: auto;
+        }
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+            height: auto;
+        }
+
+        &__logo {
+            display: none;
+        }
+    }
 }
