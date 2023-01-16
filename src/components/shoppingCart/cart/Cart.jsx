@@ -5,6 +5,7 @@ import CartItem from '../cartItem/CartItem';
 // Product data
 import { paintBrushes, rollers, puttyKnife } from '../../../productData/productTools';
 import { indoorColorArr } from '../../../productData/productIndoorColor';
+import { outdoorColorArr } from '../../../productData/productOutdoorColor';
 
 function Cart() {
 
@@ -40,6 +41,13 @@ function Cart() {
                 </div>
                 <div className='cart__items--indoorPaint'>
                     {indoorColorArr.map((product) => {  
+                        if(CartItems[product.id] !== 0) { 
+                            return <CartItem key= {product.id} data={ product } />  
+                        } 
+                    })}
+                </div>
+                <div className='cart__items--outdoorPaint'>
+                    {outdoorColorArr.map((product) => {  
                         if(CartItems[product.id] !== 0) { 
                             return <CartItem key= {product.id} data={ product } />  
                         } 
