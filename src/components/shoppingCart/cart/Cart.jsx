@@ -2,7 +2,9 @@ import React, { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ShopContext } from '../context/ShopContextProvider';
 import CartItem from '../cartItem/CartItem';
+
 // Product data
+
 import { paintBrushes, rollers, puttyKnife } from '../../../productData/productTools';
 import { indoorColorArr } from '../../../productData/productIndoorColor';
 import { outdoorColorArr } from '../../../productData/productOutdoorColor';
