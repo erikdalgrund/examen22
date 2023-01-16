@@ -1,37 +1,53 @@
 .footer {
-    height: 200px;
+    height: 300px;
+    margin-top: 20px;
 
     &-partners {
-        display: flex;
-        justify-content: center;
-        align-items: center; 
-        padding: 10px;
+        height: 250px;
+        margin-left: 50px;
     }
 
     &-follow {
-        padding: 40px;  
-        
+        border-left: 3px solid #104B57; 
+        margin-bottom: 20px;
+        margin-left: 100px;
         &--icons {
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: space-around;
+            height: 100%;
+            margin-left: 20px;
         }
     }
 
+    &-aboutUs {
+        width: 400px;
+        border-left: 3px solid #104B57;
+        margin-bottom: 20px;
+        padding-left: 20px;
+        margin-left: 100px;
+    }
+
     &-images {
-        width: 50%;
         display: flex;
+        flex-direction: column;
         justify-content: space-around;
+        height: 100%; 
     }
 
     &-bottom {
-        background-color: black;
-        height: 40%;
+        background: #104B57;
+        height: 120px;
         width: 100%;
         color: #ffff;
         display: flex;
         align-items: center;
         justify-content: space-around;
 
+    }
+
+    &-info {
+        display: flex;
     }
 }
