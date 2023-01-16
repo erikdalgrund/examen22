@@ -1,18 +1,23 @@
 import React, { createContext, useState } from 'react'
 import { paintBrushes, rollers, puttyKnife } from '../../../productData/productTools';
+import { indoorColorArr } from '../../../productData/productIndoorColor';
 
 
 // In here is functionality for the shopping cart 
 
 export const ShopContext = createContext(null);
 
-const combineProducts = paintBrushes.concat(rollers, puttyKnife);
+const combineProducts = paintBrushes.concat(rollers, puttyKnife, indoorColorArr);
 
 export const GetDefaultCart = () => {
 
     let cart = {}
 
-    for (let i = 1; i < paintBrushes.length + rollers.length + puttyKnife.length + 1; i++) {
+    for (let i = 1; i < 
+        paintBrushes.length + 
+        rollers.length + 
+        puttyKnife.length +
+        indoorColorArr.length + 1; i++) {
         cart[i] = 0
     }
 
