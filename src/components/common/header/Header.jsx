@@ -31,7 +31,6 @@ function Header() {
                             <Link to="/indoor"> <DropdownItem title="Color indoor"/> </Link>
                             <Link to="/outdoor"> <DropdownItem title="Color outdoor"/> </Link>
                             <Link to="/tools"> <DropdownItem title="Tools"/> </Link>
-                            <DropdownItem title="Test 3"/>
                         </DropdownMenu>
                     </Dropdown>
                 </Navbar>
