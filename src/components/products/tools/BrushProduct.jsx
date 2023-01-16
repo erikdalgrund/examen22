@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import { ShopContext } from '../../shoppingCart/context/ShopContextProvider';
+import { Link } from 'react-router-dom';
 
 function BrushProduct(props) {
 
@@ -18,6 +19,7 @@ function BrushProduct(props) {
           className='tool__addToCart' 
           onClick={() => addToCart(id)}>Add to cart {cartItemAmount >  0 && <> ({cartItemAmount}) </>}
         </button>
+        <Link to={`/products/${id}`} >More info</Link>
     </div>
   )
 }
