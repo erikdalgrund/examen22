@@ -1,7 +1,7 @@
-import React, { useContext } from 'react';
-import { ShopContext } from '../../../shoppingCart/context/ShopContextProvider';
+import React, { useContext } from 'react'
+import { ShopContext } from '../../../shoppingCart/context/ShopContextProvider'
 
-function IndoorPaint(props) {
+function OutdoorPaint(props) {
 
     const { id, productName, price, image} = props.data;
     const { addToCart, CartItems } = useContext(ShopContext);
@@ -15,10 +15,11 @@ function IndoorPaint(props) {
         </div>
         <p className='tool__price'> ${price}</p>
         <button 
-          className='tool__addToCart' 
-          onClick={() => addToCart(id)}>Add to cart {cartItemAmount >  0 && <> ({cartItemAmount}) </>}
+            className='tool__addToCart' 
+            onClick={() => addToCart(id)}>Add to cart {cartItemAmount >  0 && <> ({cartItemAmount}) </>}
         </button>
-    </div>  )
+    </div>  
+  )
 }
 
-export default IndoorPaint
+export default OutdoorPaint
