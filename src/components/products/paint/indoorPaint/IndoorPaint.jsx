@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, { useContext } from 'react';
 import { ShopContext } from '../../../shoppingCart/context/ShopContextProvider';
 
 function IndoorPaint(props) {
