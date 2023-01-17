@@ -5,6 +5,7 @@ import Faq from "./f.a.q";
 import Login from "./login";
 import Tools from "./tools";
 import ShoppingCart from "./shoppingcart";
+import SingleProduct from "./singleProduct";
 
 export{
     Home,
@@ -13,5 +14,6 @@ export{
     Faq,
     Login,
     Tools,
-    ShoppingCart
+    ShoppingCart,
+    SingleProduct,
 }
