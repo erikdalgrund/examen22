@@ -20,7 +20,8 @@ function IndoorPaint(props) {
           onClick={() => addToCart(id)}>Add to cart {cartItemAmount >  0 && <> ({cartItemAmount}) </>}
         </button>
         <Link to={`/products/${id}`} >More info</Link>
-    </div>  )
+    </div>  
+    )
 }
 
 export default IndoorPaint

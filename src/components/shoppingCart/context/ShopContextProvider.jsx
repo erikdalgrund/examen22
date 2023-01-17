@@ -8,7 +8,7 @@ import { outdoorColorArr } from '../../../productData/productOutdoorColor';
 
 export const ShopContext = createContext(null);
 
-const combineProducts = paintBrushes.concat(rollers, puttyKnife, indoorColorArr, outdoorColorArr);
+export const combineProducts = paintBrushes.concat(rollers, puttyKnife, indoorColorArr, outdoorColorArr);
 
 export const GetDefaultCart = () => {
 
