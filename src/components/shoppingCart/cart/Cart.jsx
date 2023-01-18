@@ -8,6 +8,7 @@ import CartItem from '../cartItem/CartItem';
 import { paintBrushes, rollers, puttyKnife } from '../../../productData/productTools';
 import { indoorColorArr } from '../../../productData/productIndoorColor';
 import { outdoorColorArr } from '../../../productData/productOutdoorColor';
+import PayButton from '../payButton';
 
 function Cart() {
 
@@ -59,7 +60,7 @@ function Cart() {
             <div className='cartItem__checkout'>
                 <p>Subtotal: ${totalAmount}</p>
                 <button onClick={() => navigate('/')}> Continue Shopping </button>
-                <button> Checkout </button>
+                <PayButton cartItems = {CartItems}/>
             </div>
         </div>
     )

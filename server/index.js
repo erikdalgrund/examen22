@@ -100,8 +100,31 @@ app.post('/login', (req, res) => {
     );
 });
 
+// Stripe for payments 
+
+const stripe = require('stripe')('sk_test_51Lhwd3FJj3pT3x2iTLGk88QncERCO0AsxYT3zw42rIWN7zEg25248Ll7sQ776oRVfwAu3HnvkJCzmDpWPfAtSbhO0060eQuJbs');
+app.use(express.static('public'));
+
+const YOUR_DOMAIN = 'http://localhost:3000';
+
+app.post('/create-checkout-session', async (req, res) => {
+  const session = await stripe.checkout.sessions.create({
+    line_items: [
+      {
+        // Provide the exact Price ID (for example, pr_1234) of the product you want to sell
+        price: 'price_1MRb2pFJj3pT3x2ipHcr35q6',
+        quantity: 1,
+      },
+    ],
+    mode: 'payment',
+    success_url: `${YOUR_DOMAIN}/checkout-success`,
+    cancel_url: `${YOUR_DOMAIN}/cart`,
+  });
+
+  res.send(303, session.url);
+});
 
 
 app.listen(3001, () => {
-    console.log('server running')
+    console.log('server running on port 3001')
 });

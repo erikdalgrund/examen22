@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Header, Footer } from './components/common';
+import { CheckoutSuccess } from "./components/shoppingCart";
 import ShopContextProvider from "./components/shoppingCart/context/ShopContextProvider";
 import { Home, Indoor, Outdoor, Faq, Login, Tools, ShoppingCart, SingleProduct} from "./pages";
 
@@ -21,6 +22,7 @@ function App() {
                       <Route path="/login" element={<Login/>} />
                       <Route path="/tools" element={<Tools/>} />
                       <Route path="/cart" element={<ShoppingCart/>} />
+                      <Route path="checkout-success" element={<CheckoutSuccess/>} />
                       <Route path="/products/:id" element={<SingleProduct/>} />
                 </Routes>
               </div>
