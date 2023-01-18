@@ -121,7 +121,7 @@ app.post('/create-checkout-session', async (req, res) => {
     cancel_url: `${YOUR_DOMAIN}/cart`,
   });
 
-  res.send(303, session.url);
+  res.send({url: session.url});
 });
 
 
