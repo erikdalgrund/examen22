@@ -5,7 +5,7 @@ function Dropdown(props) {
     const [open, setOpen] = useState(false);
 
     return (
-        <div className="dropdown dropdown-btn" onClick={() => setOpen(!open)}>
+        <div className="dropdown dropdown-btn" onMouseEnter={() => setOpen(!open)}>
                 { props.title }
             { open && props.children}
         </div>

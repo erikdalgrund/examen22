@@ -1,16 +1,20 @@
 
-
+.homepage {
+    background: $backdrop;
+}
 .homepage-top {
     display: flex;
     justify-content: space-between;
+    padding: 30px;
 }
 
 .test1 {
     display: flex;
     justify-content: center;
+    padding: 30px;
 }
 .test {
     // background: #104B57;
-    background: #FCE2D3;
+    background: $mainColor;
     width: 50%;
 }
