@@ -13,12 +13,13 @@
     justify-content: space-between;
     align-items: center;
     background: #104B57;
+    padding: 20px;
 
     
         a {
             color: white;
             span {
-                margin-right: 10px;
+                margin-right: 20px;
             }
         }
     }
@@ -32,7 +33,7 @@
     &__logo {
         width: 80px;
         height: 80px;
-        padding: 10px;
+        padding: 20px;
     }
 
     &__image {
@@ -50,7 +51,7 @@
     &__title{
         display: flex;
         font-size: $l;
-        margin-left: 10px;
+        margin-left: 20px;
         margin-right: 50px;
 
         &--color {
