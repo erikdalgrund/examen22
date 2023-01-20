@@ -22,7 +22,7 @@ export const paintBrushes = [
     {
         id: 1,
         productName: "Brush one",
-        price: 129.95,
+        price: 129,
         image: brushOne,
         description: 
             "lorem ipsum dola dola dola dola" +
@@ -58,7 +58,7 @@ export const paintBrushes = [
     {
         id: 4, 
         productName: "Brush four",
-        price: 129.95,
+        price: 129,
         image: brushFour,
         description: 
         "lorem ipsum dola dola dola dola" +
