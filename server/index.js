@@ -10,6 +10,9 @@ const session = require('express-session');
 const bcrypt = require('bcrypt');
 const saltRounds = 10;
 
+const prices = require("./productInfo.js")
+
+
 app.use(express.json());
 
 app.use(cors({
@@ -19,7 +22,7 @@ app.use(cors({
 }));
 
 app.use(cookieParser());
-app.use(bodyParser.urlencoded({ extended: true}));
+app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(session({
     key: "userId",
@@ -53,20 +56,20 @@ app.post('/register', (req, res) => {
         db.query(
             "INSERT INTO users (username, password, email) VALUES (?,?,?)",
             [username, hash, email],
-                (err, result) => {
-                    console.log(err)
-                });
+            (err, result) => {
+                console.log(err)
+            });
     });
 });
 
-app.get('/login', (req,res) => {
-    if (req.session.user){
+app.get('/login', (req, res) => {
+    if (req.session.user) {
         res.send({
             loggedIn: true,
-            user: req.session.user 
+            user: req.session.user,
         });
     } else {
-        res.send({loggedIn: false});
+        res.send({ loggedIn: false });
     }
 });
 
@@ -80,21 +83,21 @@ app.post('/login', (req, res) => {
         username,
         (err, result) => {
             if (err) {
-            res.send({err: err})
+                res.send({ err: err })
             }
 
             if (result.length > 0) {
-                bcrypt.compare(password, result[0].password, (error,response) => {
+                bcrypt.compare(password, result[0].password, (error, response) => {
                     if (response) {
                         req.session.user = result;
                         console.log(req.session.user);
                         res.send(result)
                     } else {
-                        res.send({ message: "Wrong username or password." });             
+                        res.send({ message: "Wrong username or password." });
                     }
-                 });
+                });
             } else {
-                res.send({ message: "User doesnt exist."})
+                res.send({ message: "User doesnt exist." })
             }
         }
     );
@@ -107,21 +110,40 @@ app.use(express.static('public'));
 
 const YOUR_DOMAIN = 'http://localhost:3000';
 
-app.post('/create-checkout-session', async (req, res) => {
-  const session = await stripe.checkout.sessions.create({
-    line_items: [
-      {
-        // Provide the exact Price ID (for example, pr_1234) of the product you want to sell
-        price: 'price_1MRb2pFJj3pT3x2ipHcr35q6',
-        quantity: 1,
-      },
-    ],
-    mode: 'payment',
-    success_url: `${YOUR_DOMAIN}/checkout-success`,
-    cancel_url: `${YOUR_DOMAIN}/cart`,
-  });
 
-  res.send({url: session.url});
+app.post('/create-checkout-session', async (req, res) => {
+    let line_items = []
+    for (const [key, value] of Object.entries(req.body)) {
+        const price = prices[key].price;
+        const description = prices[key].description;
+        const name = prices[key].productName;
+        const product = {
+            price_data: {
+                currency: "usd",
+                product_data: {
+                    name: name,
+                    description: description,
+                    metadata: {
+                        id: key
+                    },
+                },
+                unit_amount: price * 100,
+            },
+            quantity: value
+        }
+    
+        line_items.push(product);
+    }
+
+    const session = await stripe.checkout.sessions.create({
+
+        line_items,
+        mode: 'payment',
+        success_url: `${YOUR_DOMAIN}/checkout-success`,
+        cancel_url: `${YOUR_DOMAIN}/cart`,
+    });
+    // res.send(line_items)
+    res.send({url: session.url});
 });
 
 
