@@ -56,47 +56,52 @@ function Login() {
     <div className='loginPage'>
         <div className="form-wrapper">
             <div className='form-wrapper--login'>
-                <h3> Login </h3>
-                <label> Username </label>
+                <h3 className='form-wrapper--login-title'> Login </h3>
+                <label className='form-wrapper--login-label'> Username </label>
                 <input 
+                    className='form-wrapper--login-input'
                     type="text"
                     onChange={(e) => {
                         setUsername(e.target.value)
                     }}  
                 />
-                <label htmlFor=""> Password </label>
+                <label className='form-wrapper--login-label'> Password </label>
                 <input 
+                    className='form-wrapper--login-input'
                     type="text"
                     onChange={(e) => {
                         setPassword(e.target.value)
                     }}  
                 />
-                <button onClick={login}> Login </button>
+                <button className="form-wrapper--login-btn" onClick={login}> Login </button>
             </div>
             <div className="form-wrapper--register">
-                <h3> register </h3>
-                <label> Username </label>
+                <h3 className="form-wrapper--register-title"> Register </h3>
+                <label className="form-wrapper--register-label"> Username </label>
                 <input 
+                    className="form-wrapper--register-input"
                     type="text"
                     onChange={(e) => {
                         setUsernameReq(e.target.value)
                     }} 
                 />
-                <label htmlFor=""> Email </label>
+                <label className="form-wrapper--register-label"> Email </label>
                 <input 
+                    className="form-wrapper--register-input"
                     type="text"
                     onChange={(e) => {
                         setEmailReq(e.target.value)
                     }} 
                 />
-                <label htmlFor=""> Password </label>
+                <label className="form-wrapper--register-label"> Password </label>
                 <input 
+                    className="form-wrapper--register-input"
                     type="text"
                     onChange={(e) => {
                         setPasswordReq(e.target.value)
                     }} 
                 />
-                <button onClick={register}> Register </button>
+                <button className="form-wrapper--register-btn" onClick={register}> Register </button>
             </div>
         </div>
         <h2>{loginStatus}</h2>

@@ -9,7 +9,7 @@ function Header() {
         <div className="header">
             <div className="header__top">
 
-                <Link to="/login"> <Navitem title="Login" /> </Link>
+                <Link to="/login"> <Navitem title="Login / Register" /> </Link>
                 <Link to="/cart"> <Navitem title="Cart" /> </Link>
             </div>
             <div className="header__content">
