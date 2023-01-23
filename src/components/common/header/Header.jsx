@@ -25,7 +25,6 @@ function Header() {
                 </div>
                 <Navbar>
                     <Link to="/"> <Navitem title="Home" /> </Link>
-                    <Link to="/faq"> <Navitem title="FAQ"/> </Link>
                     <Dropdown title="Shop">
                         <DropdownMenu>
                             <Link to="/indoor"> <DropdownItem title="Color indoor"/> </Link>
@@ -33,6 +32,7 @@ function Header() {
                             <Link to="/tools"> <DropdownItem title="Tools"/> </Link>
                         </DropdownMenu>
                     </Dropdown>
+                    <Link to="/faq"> <Navitem title="FAQ"/> </Link>
                 </Navbar>
             </div>
         </div>

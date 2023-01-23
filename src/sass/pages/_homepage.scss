@@ -14,7 +14,73 @@
     padding: 30px;
 }
 .test {
-    // background: #104B57;
     background: $mainColor;
     width: 50%;
 }
+
+@media only screen and (max-width: 1200px) {
+    .test1 {
+        display: flex;
+        justify-content: center;
+        padding: 0px;
+    }
+
+    .homepage-top {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px;
+    }
+    
+}
+
+@media only screen and (max-width: 1050px) {
+    .test1 {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .homepage-top {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+    .test {
+        background: $mainColor;
+        width: 100%;
+        height: 400px;
+    }
+    .carousel {
+        min-width: 100%;
+
+        &-card {
+
+            &--content {
+                font-size: $sm;
+            }
+        }
+    }
+    .card-info {
+        min-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .test {
+        background: $mainColor;
+        width: 100%;
+        height: 250px;
+    }
+
+    .carousel {
+        min-width: 100%;
+        height: 400px;
+        &-card {
+
+            &--content {
+                font-size: $sm;
+            }
+        }
+    }
+}
+
