@@ -7,11 +7,18 @@ function Footer() {
             <div className="footer-info">
                 <div className="footer-partners">
                     <div className="footer-images">
-                        <p>Proud partners with</p>
-                        <img src="/images/footer/casadeco.jpg" />
-                        <img src="/images/footer/dekora.jpg" />
-                        <img src="/images/footer/pergo.jpg" />
-                        <img src="/images/footer/forbo.jpg" />
+                        <div className="footer-images--container">
+                            <img src="/images/footer/casadeco.jpg" />
+                        </div>
+                        <div className="footer-images--container">
+                            <img src="/images/footer/dekora.jpg" />
+                        </div>
+                        <div className="footer-images--container">
+                            <img src="/images/footer/pergo.jpg" />
+                        </div>
+                        <div className="footer-images--container">
+                            <img src="/images/footer/forbo.jpg" />
+                        </div>
                     </div>
                 </div>
                 <div className="footer-aboutUs">

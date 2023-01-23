@@ -10,3 +10,23 @@
         }
         
 }
+
+@media only screen and (max-width: 1200px) {
+    .widecard {
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .widecard {
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .widecard {
+        height: 250px;
+    }
+}
+
+

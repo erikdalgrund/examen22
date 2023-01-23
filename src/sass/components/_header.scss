@@ -1,19 +1,19 @@
 
 .header {
-    height: 200px;
+    height: 150px;
 
     &__content {
-        height: 120px;
+        height: 100px;
         display: flex;
     }
 
     &__top {
-    height: 80px;
+    height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: #104B57;
-    padding: 20px;
+    padding: 10px;
 
     
         a {
@@ -72,23 +72,29 @@
 
 @media only screen and (max-width: 500px) {
     .header {
-
-        height: auto;
         
-        &__top {
-            display: flex;
-            flex-direction: column;
-            height: auto;
+        height: 100px;
+
+        &__left {
+            display: flex; 
+            justify-content: center;
+            align-items: center;
         }
 
         &__content {
             display: flex;
-            flex-direction: column;
             height: auto;
+            align-items: center;
+            height: 50px;
         }
 
         &__logo {
             display: none;
+        }
+
+        &__title {
+            font-size: $m;
+
         }
     }
 }
