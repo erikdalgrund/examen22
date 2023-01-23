@@ -24,7 +24,7 @@ function Tools() {
             <div className='tools__title'>
                 <h3>Rollers</h3>
             </div>
-            <div className="roller__wrapper">
+            <div className="brush__wrapper">
                 {rollers.map((roller) => {
                     return <RollerProduct key={ roller.id } data = {roller} />
                 })}
@@ -34,7 +34,7 @@ function Tools() {
             <div className='tools__title'> 
                 <h3>Putty Knifes</h3>
             </div>
-            <div className='puttyKnife__wrapper'>
+            <div className='brush__wrapper'>
                 {puttyKnife.map((knife) => {
                     return <PuttyKnife key={ knife.id } data = {knife} />
                 })}
