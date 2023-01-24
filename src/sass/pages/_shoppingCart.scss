@@ -2,5 +2,71 @@
     display: flex;
     flex-direction: column;
     background-color: $backdrop;
+    min-height: 500px;
+    text-align: center;
 
+    h3 {
+        margin-top: 20px;
+    }
+}
+
+
+.cartItem {
+
+    margin: auto;
+    margin-top: 20px;
+
+    &__checkout {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        p {
+            margin-top: 10px;
+        }
+    
+        button {
+            margin-top: 10px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+
+    .cartItem {
+
+        display: flex;
+        flex-direction: column;
+
+        &__image {
+            width: 250px;
+            height: 250px;
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 650px) {
+
+    .cartItem {
+
+        display: flex;
+        flex-direction: column;
+
+        &__image {
+            width: 200px;
+            height: 200px;
+            padding: 0;
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
 }
