@@ -103,6 +103,13 @@ app.post('/login', (req, res) => {
     );
 });
 
+// Logout request
+
+app.post('/logout', (req, res) => {
+    res.clearCookie('userId', '/');
+    return res.status(200).redirect('/login');
+  });
+
 // Stripe for payments 
 
 const stripe = require('stripe')('sk_test_51Lhwd3FJj3pT3x2iTLGk88QncERCO0AsxYT3zw42rIWN7zEg25248Ll7sQ776oRVfwAu3HnvkJCzmDpWPfAtSbhO0060eQuJbs');
@@ -145,7 +152,6 @@ app.post('/create-checkout-session', async (req, res) => {
     // res.send(line_items)
     res.send({url: session.url});
 });
-
 
 app.listen(3001, () => {
     console.log('server running on port 3001')

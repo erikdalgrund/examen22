@@ -43,6 +43,13 @@ function Login() {
         });
     };
 
+    // Function for logout 
+
+    const logout = () => {
+        Axios.post('http://localhost:3001/logout')
+        console.log('test')
+    }
+
     // Axios state to see if user is logged in 
     useEffect(() => {
         Axios.get('http://localhost:3001/login').then((response) => {
@@ -73,7 +80,8 @@ function Login() {
                         setPassword(e.target.value)
                     }}  
                 />
-                <button className="form-wrapper--login-btn" onClick={login}> Login </button>
+                <button className="form-wrapper--login-btn" onClick={ login }> Login </button>
+                <button className="form-wrapper--login-btn" onClick={ logout }> Logout </button>
             </div>
             <div className="form-wrapper--register">
                 <h3 className="form-wrapper--register-title"> Register </h3>
