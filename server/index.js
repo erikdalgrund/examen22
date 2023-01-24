@@ -59,7 +59,7 @@ app.post('/register', (req, res) => {
             "INSERT INTO users (username, password, email) VALUES (?,?,?)",
             [username, hash, email],
             (err, result) => {
-                console.log(err)
+                console.log(result)
             });
     });
 });

@@ -112,7 +112,9 @@ function Login() {
                 <button className="form-wrapper--register-btn" onClick={register}> Register </button>
             </div>
         </div>
-        <h2>{loginStatus}</h2>
+        <div className='loginPage--user'>
+            <h2>{loginStatus}</h2>        
+        </div>
     </div>
   )
 }

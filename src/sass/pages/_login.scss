@@ -2,8 +2,14 @@
     background: $backdrop;
     height: 400px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    &--user {
+        margin-top: 20px;
+        height: 60px;
+    }
 }
 .form-wrapper {
     background: #ffff;
