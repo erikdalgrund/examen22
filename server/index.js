@@ -41,6 +41,8 @@ const db = mysql.createConnection({
     database: 'examen_db'
 });
 
+// Register user request
+
 app.post('/register', (req, res) => {
 
     const username = req.body.username
@@ -61,6 +63,8 @@ app.post('/register', (req, res) => {
             });
     });
 });
+
+// Login request
 
 app.get('/login', (req, res) => {
     if (req.session.user) {
