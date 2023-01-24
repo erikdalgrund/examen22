@@ -11,6 +11,10 @@
         list-style: none;
         justify-content: space-between;
         width: 100%;
+
+        a:hover {
+            color: $mainColor;
+        }
     }
 }
 .nav-item {
