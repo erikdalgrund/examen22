@@ -38,6 +38,16 @@
 
         &-btn {
             margin-top: 10px;
+            background: white;
+            border-radius: 10px;
+            transition: 0.4s;
+            height: 25px;
+
+                &:hover {
+                    background: $mainColor;
+                    color: white;
+                    cursor: pointer;
+                }
         }
     } 
 
@@ -58,6 +68,16 @@
 
         &-btn {
             margin-top: 10px;
+            background: white;
+            border-radius: 10px;
+            transition: 0.4s;
+            height: 25px;
+
+                &:hover {
+                    background: $mainColor;
+                    color: white;
+                    cursor: pointer;
+                }
         }
     } 
 

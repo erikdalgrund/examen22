@@ -75,7 +75,7 @@ function Login() {
                 <label className='form-wrapper--login-label'> Password </label>
                 <input 
                     className='form-wrapper--login-input'
-                    type="text"
+                    type="password"
                     onChange={(e) => {
                         setPassword(e.target.value)
                     }}  
@@ -104,7 +104,7 @@ function Login() {
                 <label className="form-wrapper--register-label"> Password </label>
                 <input 
                     className="form-wrapper--register-input"
-                    type="text"
+                    type="password"
                     onChange={(e) => {
                         setPasswordReq(e.target.value)
                     }} 
