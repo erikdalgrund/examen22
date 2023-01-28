@@ -12,7 +12,13 @@ function Home() {
       </section>
       <section className='test1'>
         <div className="test">
-          
+            <h4 className='test-title'>
+              Lorem ipsum dolor sit.
+            </h4>
+            <p className='test-content'>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Voluptas quis, rem officia accusamus quae voluptatem.
+            </p>
         </div>
         <Carousel images={ content } />
       </section >
@@ -22,7 +28,13 @@ function Home() {
             cssClass="card-info"
           />
           <div className="test">
-
+            <h4 className='test-title'>
+              Lorem ipsum dolor sit.
+            </h4>
+            <p className='test-content'>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Voluptas quis, rem officia accusamus quae voluptatem.
+            </p>
           </div>
       </div>
     </div>

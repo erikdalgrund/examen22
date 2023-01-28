@@ -19,6 +19,18 @@
 
     &__addToCart {
         margin-top: 10px;
+        background: white;
+        border-radius: 10px;
+        transition: 0.4s;
+        min-width: 95px;
+        height: 22px;
+        margin-bottom: 5px;
+
+            &:hover {
+                background: $mainColor;
+                color: white;
+                cursor: pointer;
+            }
     }
 
     &__image {
